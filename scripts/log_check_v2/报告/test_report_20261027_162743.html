@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>物品配置变更测试报告 2026-10-27 16:27:43</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#0d1117;color:#c9d1d9;padding:24px;max-width:1100px;margin:0 auto}
+h1{color:#58a6ff;font-size:22px;margin-bottom:6px}
+.subtitle{color:#8b949e;font-size:13px;margin-bottom:20px}
+.card{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:18px;margin-bottom:16px}
+.card h2{font-size:15px;color:#8b949e;margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{background:#21262d;color:#8b949e;text-align:left;padding:8px 12px;font-weight:600;border-bottom:1px solid #30363d}
+td{padding:8px 12px;border-bottom:1px solid #21262d}
+tr:hover{background:#1c2129}
+.pass-cell{color:#3fb950;font-weight:600}
+.fail-cell{color:#f85149;font-weight:600}
+.badge{display:inline-block;padding:3px 10px;border-radius:12px;font-size:12px;font-weight:700;letter-spacing:.3px}
+.badge.pass{background:#238636;color:#fff}
+.badge.fail{background:#da3633;color:#fff}
+.header-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.header-grid .item{display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #21262d}
+.header-grid .item .label{color:#8b949e}
+.header-grid .item .value{color:#c9d1d9;font-weight:600}
+.summary-row td{font-weight:700;font-size:15px}
+.warning{background:#2d1f00;border:1px solid #9e6a03;border-radius:6px;padding:12px 16px;margin-top:12px;color:#d29922;font-size:13px}
+.stats{display:flex;gap:24px;margin-bottom:12px;font-size:13px}
+.stats .s-label{color:#8b949e}
+.stats .s-value{color:#c9d1d9;font-weight:700;margin-left:4px}
+</style>
+</head>
+<body>
+
+<h1>物品配置变更测试报告</h1>
+<p class="subtitle">生成于 2026-10-27 16:27:43</p>
+
+<!-- Header Info -->
+<div class="card">
+  <h2>测试信息</h2>
+  <div class="header-grid">
+    <div class="item"><span class="label">测试时间</span><span class="value">2026-10-27 16:27:43</span></div>
+    <div class="item"><span class="label">分组 Tag</span><span class="value">(3, 12)</span></div>
+    <div class="item"><span class="label">版本</span><span class="value">涂膜护剂_分组序列调整</span></div>
+    <div class="item"><span class="label">改动物品数</span><span class="value">24</span></div>
+    <div class="item"><span class="label">DebugWeb</span><span class="value">http://127.0.0.1:30001</span></div>
+    <div class="item"><span class="label">总结</span><span class="value"><span class="badge fail">存在失败项</span></span></div>
+  </div>
+</div>
+
+<!-- Table 1: Changed Items -->
+<div class="card">
+  <h2>1. 改动物品清单</h2>
+  <table>
+    <thead><tr><th>#</th><th>物品ID</th><th>物品名称</th></tr></thead>
+    <tbody>
+<tr><td>1</td><td>1343000</td><td>裂解涂膜-等级1</td></tr>
+<tr><td>2</td><td>1343001</td><td>裂解涂膜-等级2</td></tr>
+<tr><td>3</td><td>1343002</td><td>裂解涂膜-等级3</td></tr>
+<tr><td>4</td><td>1343003</td><td>滞能涂膜-等级1</td></tr>
+<tr><td>5</td><td>1343004</td><td>滞能涂膜-等级2</td></tr>
+<tr><td>6</td><td>1343005</td><td>滞能涂膜-等级3</td></tr>
+<tr><td>7</td><td>1343006</td><td>超压涂膜-等级1</td></tr>
+<tr><td>8</td><td>1343007</td><td>超压涂膜-等级2</td></tr>
+<tr><td>9</td><td>1343008</td><td>超压涂膜-等级3</td></tr>
+<tr><td>10</td><td>1343009</td><td>穿透涂膜-等级1</td></tr>
+<tr><td>11</td><td>1343010</td><td>穿透涂膜-等级2</td></tr>
+<tr><td>12</td><td>1343011</td><td>穿透涂膜-等级3</td></tr>
+<tr><td>13</td><td>1343012</td><td>坚韧护剂-等级1</td></tr>
+<tr><td>14</td><td>1343013</td><td>坚韧护剂-等级2</td></tr>
+<tr><td>15</td><td>1343014</td><td>坚韧护剂-等级3</td></tr>
+<tr><td>16</td><td>1343015</td><td>稳固护剂-等级1</td></tr>
+<tr><td>17</td><td>1343016</td><td>稳固护剂-等级2</td></tr>
+<tr><td>18</td><td>1343017</td><td>稳固护剂-等级3</td></tr>
+<tr><td>19</td><td>1343018</td><td>缓冲护剂-等级1</td></tr>
+<tr><td>20</td><td>1343019</td><td>缓冲护剂-等级2</td></tr>
+<tr><td>21</td><td>1343020</td><td>缓冲护剂-等级3</td></tr>
+<tr><td>22</td><td>1343021</td><td>护心护剂-等级1</td></tr>
+<tr><td>23</td><td>1343022</td><td>护心护剂-等级2</td></tr>
+<tr><td>24</td><td>1343023</td><td>护心护剂-等级3</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Table 2: Step Execution -->
+<div class="card">
+  <h2>2. 测试步骤执行结果</h2>
+  <table>
+    <thead><tr><th>步骤</th><th>说明</th><th>状态</th><th>详情</th></tr></thead>
+    <tbody>
+      <tr><td>步骤3</td><td>配表查询</td><td>&#x2705;</td><td>获取到 24 个配表ID</td></tr>
+      <tr><td>步骤4</td><td>柜子差异</td><td>&#x2705;</td><td>柜子缺失 17 个</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Table 3: Config Check -->
+<div class="card">
+  <h2>3. 配表校验 <span class="badge pass">PASS</span></h2>
+  <div class="stats">
+    <div><span class="s-label">改动ID:</span><span class="s-value">24</span></div>
+    <div><span class="s-label">配表ID:</span><span class="s-value">24</span></div>
+    <div><span class="s-label">已包含:</span><span class="s-value">24/24</span></div>
+  </div>
+  <table>
+    <thead><tr><th>物品ID</th><th>物品名称</th><th>配表状态</th></tr></thead>
+    <tbody>
+<tr><td>1343000</td><td>裂解涂膜-等级1</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+<tr><td>1343001</td><td>裂解涂膜-等级2</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+<tr><td>1343002</td><td>裂解涂膜-等级3</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+<tr><td>1343003</td><td>滞能涂膜-等级1</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+<tr><td>1343004</td><td>滞能涂膜-等级2</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+<tr><td>1343005</td><td>滞能涂膜-等级3</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+<tr><td>1343006</td><td>超压涂膜-等级1</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+<tr><td>1343007</td><td>超压涂膜-等级2</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+<tr><td>1343008</td><td>超压涂膜-等级3</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+<tr><td>1343009</td><td>穿透涂膜-等级1</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+<tr><td>1343010</td><td>穿透涂膜-等级2</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+<tr><td>1343011</td><td>穿透涂膜-等级3</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+<tr><td>1343012</td><td>坚韧护剂-等级1</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+<tr><td>1343013</td><td>坚韧护剂-等级2</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+<tr><td>1343014</td><td>坚韧护剂-等级3</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+<tr><td>1343015</td><td>稳固护剂-等级1</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+<tr><td>1343016</td><td>稳固护剂-等级2</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+<tr><td>1343017</td><td>稳固护剂-等级3</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+<tr><td>1343018</td><td>缓冲护剂-等级1</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+<tr><td>1343019</td><td>缓冲护剂-等级2</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+<tr><td>1343020</td><td>缓冲护剂-等级3</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+<tr><td>1343021</td><td>护心护剂-等级1</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+<tr><td>1343022</td><td>护心护剂-等级2</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+<tr><td>1343023</td><td>护心护剂-等级3</td><td class="pass-cell">&#x2705; 已生效</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Table 4: Cabinet Check -->
+<div class="card">
+  <h2>4. 柜子校验 <span class="badge fail">FAIL</span></h2>
+  <div class="stats">
+    <div><span class="s-label">在柜子:</span><span class="s-value">7</span></div>
+    <div><span class="s-label">不在柜子:</span><span class="s-value">17</span></div>
+  </div>
+  <table>
+    <thead><tr><th>物品ID</th><th>物品名称</th><th>柜子状态</th></tr></thead>
+    <tbody>
+<tr><td>1343000</td><td>裂解涂膜-等级1</td><td class="fail-cell">&#x274C; 不在柜子</td></tr>
+<tr><td>1343001</td><td>裂解涂膜-等级2</td><td class="fail-cell">&#x274C; 不在柜子</td></tr>
+<tr><td>1343002</td><td>裂解涂膜-等级3</td><td class="pass-cell">&#x2705; 在柜子中</td></tr>
+<tr><td>1343003</td><td>滞能涂膜-等级1</td><td class="fail-cell">&#x274C; 不在柜子</td></tr>
+<tr><td>1343004</td><td>滞能涂膜-等级2</td><td class="fail-cell">&#x274C; 不在柜子</td></tr>
+<tr><td>1343005</td><td>滞能涂膜-等级3</td><td class="pass-cell">&#x2705; 在柜子中</td></tr>
+<tr><td>1343006</td><td>超压涂膜-等级1</td><td class="fail-cell">&#x274C; 不在柜子</td></tr>
+<tr><td>1343007</td><td>超压涂膜-等级2</td><td class="fail-cell">&#x274C; 不在柜子</td></tr>
+<tr><td>1343008</td><td>超压涂膜-等级3</td><td class="pass-cell">&#x2705; 在柜子中</td></tr>
+<tr><td>1343009</td><td>穿透涂膜-等级1</td><td class="pass-cell">&#x2705; 在柜子中</td></tr>
+<tr><td>1343010</td><td>穿透涂膜-等级2</td><td class="fail-cell">&#x274C; 不在柜子</td></tr>
+<tr><td>1343011</td><td>穿透涂膜-等级3</td><td class="pass-cell">&#x2705; 在柜子中</td></tr>
+<tr><td>1343012</td><td>坚韧护剂-等级1</td><td class="fail-cell">&#x274C; 不在柜子</td></tr>
+<tr><td>1343013</td><td>坚韧护剂-等级2</td><td class="fail-cell">&#x274C; 不在柜子</td></tr>
+<tr><td>1343014</td><td>坚韧护剂-等级3</td><td class="pass-cell">&#x2705; 在柜子中</td></tr>
+<tr><td>1343015</td><td>稳固护剂-等级1</td><td class="fail-cell">&#x274C; 不在柜子</td></tr>
+<tr><td>1343016</td><td>稳固护剂-等级2</td><td class="fail-cell">&#x274C; 不在柜子</td></tr>
+<tr><td>1343017</td><td>稳固护剂-等级3</td><td class="pass-cell">&#x2705; 在柜子中</td></tr>
+<tr><td>1343018</td><td>缓冲护剂-等级1</td><td class="fail-cell">&#x274C; 不在柜子</td></tr>
+<tr><td>1343019</td><td>缓冲护剂-等级2</td><td class="fail-cell">&#x274C; 不在柜子</td></tr>
+<tr><td>1343020</td><td>缓冲护剂-等级3</td><td class="fail-cell">&#x274C; 不在柜子</td></tr>
+<tr><td>1343021</td><td>护心护剂-等级1</td><td class="fail-cell">&#x274C; 不在柜子</td></tr>
+<tr><td>1343022</td><td>护心护剂-等级2</td><td class="fail-cell">&#x274C; 不在柜子</td></tr>
+<tr><td>1343023</td><td>护心护剂-等级3</td><td class="fail-cell">&#x274C; 不在柜子</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Summary -->
+<div class="card">
+  <h2>5. 测试总结</h2>
+  <table>
+    <thead><tr><th>检查项</th><th>结果</th></tr></thead>
+    <tbody>
+      <tr><td>步骤3 - 指令执行</td><td>&#x2705; 成功</td></tr>
+      <tr><td>步骤4 - 指令执行</td><td>&#x2705; 成功</td></tr>
+      <tr><td>配表校验</td><td><span class="badge pass">PASS</span></td></tr>
+      <tr><td>柜子校验</td><td><span class="badge fail">FAIL</span></td></tr>
+      <tr class="summary-row"><td>总结</td><td><span class="badge fail">存在失败项</span></td></tr>
+    </tbody>
+  </table>
+  <div class="warning">注意: 柜子中缺失 17 个物品，可能需要先通过 GM 指令获取物品并手动存入柜子后重新测试。</div>
+</div>
+
+</body>
+</html>

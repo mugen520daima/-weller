@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-10-28 17:16:51",
+  "tag": [
+    3,
+    12
+  ],
+  "version": "涂膜护剂_分组序列调整",
+  "abort_reason": "步骤1 存入物品失败 (0/24)",
+  "steps": {
+    "step1": {
+      "step": "1-存入物品",
+      "success": false,
+      "timed_out": false,
+      "total": 24,
+      "ok_count": 0,
+      "fail_count": 1,
+      "timeout_count": 0,
+      "unverified_count": 0,
+      "details": [
+        {
+          "item_id": 1343000,
+          "cabinet_id": "asyiam+X+GmCHmvo",
+          "status": "error",
+          "raw_log": "[17:16:48.777] M [SCRIPT] >>>> !b = self.build_comp.get_step_building() or self.craft_comp.get_use_building(); bobj = b.building_comp.get_building_object('asyiam+X+GmCHmvo'); import com.item.RewardList as RewardList; r = RewardList.RewardList(); r.add_item(1343000, 1); bobj.target_react_comp.add_rewards(self.id, r); print('STORE_OK 1343000 -> asyiam+X+GmCHmvo')\n[17:16:48.846] M [SCRIPT] Traceback (most recent call last):\n[17:16:48.846] M [SCRIPT]   File \"script/components/avatar/DebugComp.py\", line 5150, in exec_pipe_command\n[17:16:48.846] M [SCRIPT]   File \"<client gm debug>\", line 1, in <module>\n[17:16:48.846] M [SCRIPT] AttributeError: 'NoneType' object has no attribute 'building_comp'\n[17:16:48.846] M [SCRIPT] \n[17:16:50.712] M [SCRIPT] --- RPC >>> PrimaryPlayerEntity(asyiMm+X+GmCHlT/).upload_client_low_fps_data({4: {0: 61}},)\n",
+          "error_msg": "执行报错"
+        }
+      ]
+    },
+    "step2": null,
+    "step3": null
+  },
+  "comparison": null,
+  "all_pass": false
+}

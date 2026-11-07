@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>物品配置变更测试报告 2026-10-28 17:16:51</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#0d1117;color:#c9d1d9;padding:24px;max-width:1100px;margin:0 auto}
+h1{color:#58a6ff;font-size:22px;margin-bottom:6px}
+.subtitle{color:#8b949e;font-size:13px;margin-bottom:20px}
+.card{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:18px;margin-bottom:16px}
+.card h2{font-size:15px;color:#8b949e;margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px}
+.card h3{font-size:14px;color:#58a6ff;margin:12px 0 6px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{background:#21262d;color:#8b949e;text-align:left;padding:8px 12px;font-weight:600;border-bottom:1px solid #30363d}
+td{padding:8px 12px;border-bottom:1px solid #21262d}
+tr:hover{background:#1c2129}
+.pass-cell{color:#3fb950;font-weight:600}
+.fail-cell{color:#f85149;font-weight:600}
+.badge{display:inline-block;padding:3px 10px;border-radius:12px;font-size:12px;font-weight:700;letter-spacing:.3px}
+.badge.pass{background:#238636;color:#fff}
+.badge.fail{background:#da3633;color:#fff}
+.header-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.header-grid .item{display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #21262d}
+.header-grid .item .label{color:#8b949e}
+.header-grid .item .value{color:#c9d1d9;font-weight:600}
+.summary-row td{font-weight:700;font-size:15px}
+.warning{background:#2d1f00;border:1px solid #9e6a03;border-radius:6px;padding:12px 16px;margin-top:12px;color:#d29922;font-size:13px}
+.stats{display:flex;gap:24px;margin-bottom:12px;font-size:13px}
+.stats .s-label{color:#8b949e}
+.stats .s-value{color:#c9d1d9;font-weight:700;margin-left:4px}
+.log-section{margin-top:12px}
+.log-pre{background:#0d1117;border:1px solid #21262d;border-radius:6px;padding:12px;font-size:12px;color:#8b949e;overflow-x:auto;max-height:400px;overflow-y:auto;white-space:pre-wrap;word-break:break-all}
+</style>
+</head>
+<body>
+
+<h1>物品配置变更测试报告</h1>
+<p class="subtitle">生成于 2026-10-28 17:16:51</p>
+
+<div class="card">
+  <h2>测试信息</h2>
+  <div class="header-grid">
+    <div class="item"><span class="label">测试时间</span><span class="value">2026-10-28 17:16:51</span></div>
+    <div class="item"><span class="label">分组 Tag</span><span class="value">(3, 12)</span></div>
+    <div class="item"><span class="label">版本</span><span class="value">涂膜护剂_分组序列调整</span></div>
+    <div class="item"><span class="label">改动物品数</span><span class="value">24</span></div>
+    <div class="item"><span class="label">DebugWeb</span><span class="value">http://127.0.0.1:30001</span></div>
+    <div class="item"><span class="label">总结</span><span class="value"><span class="badge fail">存在失败项</span></span></div>
+  </div>
+  <div class="warning">测试中断: 步骤1 存入物品失败 (0/24)</div>
+</div>
+
+<div class="card">
+  <h2>1. 改动物品清单</h2>
+  <table>
+    <thead><tr><th>#</th><th>物品ID</th><th>物品名称</th></tr></thead>
+    <tbody>
+<tr><td>1</td><td>1343000</td><td>裂解涂膜-等级1</td></tr>
+<tr><td>2</td><td>1343001</td><td>裂解涂膜-等级2</td></tr>
+<tr><td>3</td><td>1343002</td><td>裂解涂膜-等级3</td></tr>
+<tr><td>4</td><td>1343003</td><td>滞能涂膜-等级1</td></tr>
+<tr><td>5</td><td>1343004</td><td>滞能涂膜-等级2</td></tr>
+<tr><td>6</td><td>1343005</td><td>滞能涂膜-等级3</td></tr>
+<tr><td>7</td><td>1343006</td><td>超压涂膜-等级1</td></tr>
+<tr><td>8</td><td>1343007</td><td>超压涂膜-等级2</td></tr>
+<tr><td>9</td><td>1343008</td><td>超压涂膜-等级3</td></tr>
+<tr><td>10</td><td>1343009</td><td>穿透涂膜-等级1</td></tr>
+<tr><td>11</td><td>1343010</td><td>穿透涂膜-等级2</td></tr>
+<tr><td>12</td><td>1343011</td><td>穿透涂膜-等级3</td></tr>
+<tr><td>13</td><td>1343012</td><td>坚韧护剂-等级1</td></tr>
+<tr><td>14</td><td>1343013</td><td>坚韧护剂-等级2</td></tr>
+<tr><td>15</td><td>1343014</td><td>坚韧护剂-等级3</td></tr>
+<tr><td>16</td><td>1343015</td><td>稳固护剂-等级1</td></tr>
+<tr><td>17</td><td>1343016</td><td>稳固护剂-等级2</td></tr>
+<tr><td>18</td><td>1343017</td><td>稳固护剂-等级3</td></tr>
+<tr><td>19</td><td>1343018</td><td>缓冲护剂-等级1</td></tr>
+<tr><td>20</td><td>1343019</td><td>缓冲护剂-等级2</td></tr>
+<tr><td>21</td><td>1343020</td><td>缓冲护剂-等级3</td></tr>
+<tr><td>22</td><td>1343021</td><td>护心护剂-等级1</td></tr>
+<tr><td>23</td><td>1343022</td><td>护心护剂-等级2</td></tr>
+<tr><td>24</td><td>1343023</td><td>护心护剂-等级3</td></tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="card">
+  <h2>2. 存入物品 <span class="badge fail">FAIL</span></h2>
+  <div class="stats">
+    <div><span class="s-label">总数:</span><span class="s-value">24</span></div>
+    <div><span class="s-label">成功:</span><span class="s-value">0</span></div>
+    <div><span class="s-label">失败:</span><span class="s-value">1</span></div>
+    <div><span class="s-label">未确认:</span><span class="s-value">0</span></div>
+  </div>
+  <table>
+    <thead><tr><th>物品ID</th><th>物品名称</th><th>柜子</th><th>状态</th></tr></thead>
+    <tbody>
+<tr><td>1343000</td><td>裂解涂膜-等级1</td><td>asyiam+X+GmCHmvo</td><td class="fail-cell">&#x274C; 报错</td></tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+<div class="card">
+  <h2>5. 测试步骤总结</h2>
+  <table>
+    <thead><tr><th>步骤</th><th>说明</th><th>状态</th><th>详情</th></tr></thead>
+    <tbody>
+      <tr><td>步骤1</td><td>存入物品</td><td>&#x274C;</td><td>失败，成功 0/24, 失败 1</td></tr>
+      <tr><td>步骤2</td><td>配表校验</td><td>&#x274C;</td><td>未执行</td></tr>
+      <tr><td>步骤3</td><td>柜子校验</td><td>&#x274C;</td><td>未执行</td></tr>
+      <tr><td>配表</td><td>比对结果</td><td colspan="2">未执行</td></tr>
+      <tr><td>柜子</td><td>比对结果</td><td colspan="2">未执行</td></tr>
+      <tr class="summary-row"><td>总结</td><td colspan="3"><span class="badge fail">存在失败项</span></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="card">
+  <h2>6. 原始日志</h2>
+  
+<div class="log-section">
+  <h3>步骤1-存入物品</h3>
+  <pre class="log-pre">[17:16:48.777] M [SCRIPT] &gt;&gt;&gt;&gt; !b = self.build_comp.get_step_building() or self.craft_comp.get_use_building(); bobj = b.building_comp.get_building_object(&#x27;asyiam+X+GmCHmvo&#x27;); import com.item.RewardList as RewardList; r = RewardList.RewardList(); r.add_item(1343000, 1); bobj.target_react_comp.add_rewards(self.id, r); print(&#x27;STORE_OK 1343000 -&gt; asyiam+X+GmCHmvo&#x27;)
+[17:16:48.846] M [SCRIPT] Traceback (most recent call last):
+[17:16:48.846] M [SCRIPT]   File &quot;script/components/avatar/DebugComp.py&quot;, line 5150, in exec_pipe_command
+[17:16:48.846] M [SCRIPT]   File &quot;&lt;client gm debug&gt;&quot;, line 1, in &lt;module&gt;
+[17:16:48.846] M [SCRIPT] AttributeError: &#x27;NoneType&#x27; object has no attribute &#x27;building_comp&#x27;
+[17:16:48.846] M [SCRIPT] 
+[17:16:50.712] M [SCRIPT] --- RPC &gt;&gt;&gt; PrimaryPlayerEntity(asyiMm+X+GmCHlT/).upload_client_low_fps_data({4: {0: 61}},)
+</pre>
+</div>
+</div>
+
+</body>
+</html>

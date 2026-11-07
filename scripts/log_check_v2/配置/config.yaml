@@ -1,0 +1,31 @@
+# 物品改动Log校验工具 v2 配置文件
+
+# ========== 本地log配置 ==========
+local_log:
+  # log文件路径（改成你实际的路径）
+  path: "E:/pack/log_0.txt"
+  # 编码
+  encoding: "utf-8"
+  # 物品ID提取正则（根据实际log格式调整）
+  item_id_pattern: "item_id[=:]\\s*(\\d+)"
+  # 实时读取轮询间隔（秒）
+  poll_interval: 0.5
+  # 实时读取超时（秒），超时后自动停止
+  watch_timeout: 120
+
+# ========== 服务端log配置 ==========
+server_log:
+  url: "http://xxx.xxx.xxx/api/logs"
+  token: ""
+  player_id: ""
+  time_window_seconds: 60
+
+# ========== 自动化点击配置 ==========
+auto_click:
+  adb_device: ""
+  click_coords_file: "click_coords.json"
+
+# ========== 报告配置 ==========
+report:
+  output_dir: "../../reports/log_check_v2/"
+  format: "md"  # md 或 json

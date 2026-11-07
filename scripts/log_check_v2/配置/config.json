@@ -1,0 +1,11 @@
+{
+    "local_log_path": "C:/game/logs/client.log",
+    "server_log_url": "http://xxx.xxx.xxx/api/logs",
+    "server_log_token": "",
+    "player_id": "",
+    "adb_device": "",
+    "click_coords_file": "click_coords.json",
+    "report_output_dir": "../../reports/log_check_v2/",
+    "log_time_window_seconds": 60,
+    "item_id_pattern": "item_id[=:]\\s*(\\d+)"
+}
